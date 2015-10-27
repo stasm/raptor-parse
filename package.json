@@ -1,0 +1,35 @@
+{
+  "name": "raptor-parse",
+  "description": "Parse Raptor's LDJSON metrics files",
+  "version": "0.0.1",
+  "author": "Staś Małolepszy <stas@mozilla.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stasm/raptor-parse.git"
+  },
+  "keywords": [
+    "raptor",
+    "firefoxos",
+    "b2g"
+  ],
+  "main": "./dist/index.js",
+  "bin": "./dist/cli.js",
+  "scripts": {
+    "test": "make lint && make test"
+  },
+  "dependencies": {
+    "minimist": "^0.1.0",
+    "ndjson": "^1.4.2",
+    "ramda": "^0.18.0"
+  },
+  "engine": {
+    "node": ">=4.1"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-plugin-array-includes": "^1.1.1",
+    "eslint": "^1.6.0",
+    "mocha": "^2.3.3"
+  }
+}
